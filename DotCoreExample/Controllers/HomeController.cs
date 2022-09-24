@@ -19,30 +19,18 @@ namespace DotCoreExample.Controllers
         public IActionResult Index()
         {
 
+
+
+
+
            
 
-            string queryString =
-        "INSERT INTO Usuarios(USER_ID,USER_USER,PASS) values (50, 'TECHNOLOGY', 'DENVER')";
-            using (Oracle.ManagedDataAccess.Client.OracleConnection connection = new OracleConnection("DATA SOURCE=10.204.3.1:1521/PROD;" +
-"PERSIST SECURITY INFO=True;USER ID=; password=; Pooling = False;"))
-            {
-                OracleCommand command = new OracleCommand(queryString);
-                command.Connection = connection;
-                try
-                {
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
 
 
+          
 
             return View();
-        }
+         }
 
         public IActionResult Privacy()
         {

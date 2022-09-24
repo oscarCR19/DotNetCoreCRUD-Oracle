@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oscar\\Desktop\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {}
+    "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oscar\\Desktop\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {
+    "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oscar\\Desktop\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
+        "projectUniqueName": "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
         "projectName": "DotCoreExample",
-        "projectPath": "C:\\Users\\oscar\\Desktop\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
+        "projectPath": "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
         "packagesPath": "C:\\Users\\oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oscar\\Desktop\\DotCoreExample\\DotCoreExample\\obj\\",
+        "outputPath": "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.21.61, )"
+            },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
               "version": "[3.21.70, )"
@@ -47,6 +51,10 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [
