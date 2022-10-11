@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {}
+    "C:\\Users\\PC-1\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {
+    "C:\\Users\\PC-1\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
+        "projectUniqueName": "C:\\Users\\PC-1\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
         "projectName": "DotCoreExample",
-        "projectPath": "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
-        "packagesPath": "C:\\Users\\oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oscar\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\obj\\",
+        "projectPath": "C:\\Users\\PC-1\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\DotCoreExample.csproj",
+        "packagesPath": "C:\\Users\\PC-1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC-1\\Desktop\\Repositorios\\DotCoreExample\\DotCoreExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC-1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,6 +55,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.2.1, )"
             }
           },
           "imports": [
@@ -63,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
