@@ -1,0 +1,20 @@
+﻿@model MessageViewModel
+@{
+    ViewData["Title"] = "Mensaje";
+}
+
+@if(@ViewBag.mensaje=="Datos registrados"){
+<h1 class="text-danger">Datos en uso</h1>
+}
+
+
+@if (@ViewBag.mensaje == "Usuario registrado exitosamente")
+{
+    <h1 class="text-danger">Usuario registrado exitosamente</h1>
+}
+
+
+
+
+
+

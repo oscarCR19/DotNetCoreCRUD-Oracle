@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Registro";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/site.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+    @{
+        var message = ViewBag.SuccessMsg;
+    }
+
+    <script type="text/javascript">
+        var message = '@message';
+        if (message) {
+            alert(message);
+        }
+    </script>
+
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <div class="mb-md-5 mt-md-4 pb-5">
+                                <form asp-controller="register" asp-action="RegistrarUsuario">
+                                    <h2 class="fw-bold mb-2 text-uppercase">Registro</h2>
+                                    <p class="text-white-50 mb-5">Por favor ingrese los datos!</p>
+                                    
+
+                                    <label>Datos personales</label>
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="text" id="txtcedula" name="txtcedula" pattern="[1-9]-?\d{4}-?\d{4}" required title="Formato: 1-2345-6789" placeholder="Cédula de Identidad" style="width:100%" class="form-control form-control-lg" />
+                                        
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col">
+                                            <div class="form-outline form-white mb-4">
+                                                <input type="text" id="txtNombre1" name="txtNombre1" placeholder="Primer nombre" class="form-control form-control-lg" required />
+                                            </div>
+
+                                            <div class="form-outline form-white mb-4">
+                                                <input type="text" id="txtNombre2" name="txtNombre2" placeholder="Segundo Nombre" class="form-control form-control-lg" />
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-outline form-white mb-4">
+                                                <input type="text" id="txtApellido1" name="txtApellido1" placeholder="Primer apellido" class="form-control form-control-lg" required />
+                                            </div>
+
+                                            <div class="form-outline form-white mb-4">
+                                                <input type="text" id="txtApellido2" name="txtApellido2" placeholder="Segundo apellido" class="form-control form-control-lg" required />
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="email" id="txtCorreo" name="txtCorreo" placeholder="Correo" class="form-control form-control-lg" required />
+                                        </div>
+
+                                        <div class="form-outline form-white mb-4">
+                                            <label>Fecha nacimiento</label>
+                                            <input type="date" id="txtFecha" name="txtFecha"  class="form-control form-control-lg" required />
+                                        </div>
+
+
+
+                                    </div>
+                                    
+
+                                   
+                                    <label>Datos de login</label>
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="text" id="txtUsuario" name="txtUsuario" placeholder="Usuario" class="form-control form-control-lg" required />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="password" id="txtContra" name="txtContra" placeholder="Contraseña" class="form-control form-control-lg" required />
+                                    </div>
+
+                                  
+
+                                   
+
+                                    
+
+
+                                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                                </form>
+
+                            </div>
+
+                            <div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+</html>

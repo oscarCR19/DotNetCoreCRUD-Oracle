@@ -4,6 +4,7 @@ using System.Data.OracleClient;
 using System.Data;
 using System.Diagnostics;
 using Oracle.ManagedDataAccess.Client;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace DotCoreExample.Controllers
 {
@@ -31,6 +32,8 @@ namespace DotCoreExample.Controllers
 
             return View();
          }
+
+        
 
         public IActionResult Privacy()
         {

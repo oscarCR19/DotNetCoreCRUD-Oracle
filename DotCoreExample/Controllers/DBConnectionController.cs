@@ -12,7 +12,7 @@ namespace DotCoreExample.Controllers
 
 
         
-        public void executeStoreDB(string storedProcedure, List<SqlParameter> param)
+        public void executeStoreDB(string storedProcedure, List<OracleParameter> param)
         {
             DBCredentialsModel credential = new DBCredentialsModel();
 
@@ -32,7 +32,7 @@ namespace DotCoreExample.Controllers
 
                 if (param != null)
                 {
-                    foreach (SqlParameter item in param)
+                    foreach (OracleParameter item in param)
                     {
                         cmd.Parameters.Add(item);
                     }
@@ -49,7 +49,7 @@ namespace DotCoreExample.Controllers
 
         }
 
-        public DataTable fillStoreDb(string storedProcedure, List<SqlParameter> param)
+        public DataTable fillStoreDb(string storedProcedure, List<OracleParameter> param)
         {
 
             DBCredentialsModel credential = new DBCredentialsModel();
@@ -69,7 +69,7 @@ namespace DotCoreExample.Controllers
 
                 if (param != null)
                 {
-                    foreach (SqlParameter item in param)
+                    foreach (OracleParameter item in param)
                     {
                         cmd.Parameters.Add(item);
                     }
